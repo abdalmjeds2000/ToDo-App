@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1199px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.nav {
+  width: 100%;
+  padding: 25px;
+  background-color: #e6e6e7;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 3px solid blueviolet;
+}
+
+
+
+.container .form {
+  background-color: #e6e6e7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px;
+}
+.container .form input[type='text'] {
+  flex-basis: 70%;
+  padding: 15px;
+  outline: none;
+  font-family: 'Merriweather', serif;
+  border: 0;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.container .form input[type='text']::placeholder {
+  color: #e6e6e7;
+}
+.container .form input[type='submit'] {
+  flex-basis: 25%;
+  border: 0;
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+.container .form input[type='submit']:hover {
+  cursor: pointer;
+  background-color: rgb(113, 29, 192);
+}
+
+
+.container .tasks {
+  background-color: #e6e6e7;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 50px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: blueviolet;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
